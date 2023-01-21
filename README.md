@@ -1,6 +1,6 @@
 # Mango-Moves
 
-### A Dog inspired browser game.
+### A Dog inspired browser game
 
 ## Date 1/21/23
 
@@ -28,7 +28,7 @@
 
 #### Press the start button to begin your journey as Mango. Control Mango by hitting the space bar to jump over hurdles.
 
-### A Trello board was used to track and organize the development progress and can be viewed [here] (https://trello.com/b/nIZ8x3Xp/unit-1-project).
+#### A Trello board was used to track and organize the development progress and can be viewed here. (https://trello.com/b/nIZ8x3Xp/unit-1-project)
 
 ### **_Credits_**
 
