@@ -30,6 +30,16 @@
 
 #### A Trello board was used to track and organize the development progress and can be viewed here. (https://trello.com/b/nIZ8x3Xp/unit-1-project)
 
+---
+
+#### Picture: [Mango] (https://imgur.com/a/upCr3Fw)
+
+####
+
+---
+
 ### **_Credits_**
+
+https://imgur.com/a/upCr3Fw
 
 ---
