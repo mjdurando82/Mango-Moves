@@ -6,7 +6,7 @@
 
 ### By: Michael Durando
 
-#### [LinkedIn] (https://www.linkedin.com/in/michael-durando-101050138/) | [GitHub] (https://github.com/mjdurando82)
+#### [LinkedIn](https://www.linkedin.com/in/michael-durando-101050138/) | [GitHub](https://github.com/mjdurando82)
 
 ---
 
@@ -32,7 +32,7 @@
 
 ---
 
-#### Picture: ![Mango](https://imgur.com/a/upCr3Fw)
+#### Picture: ![Mango](https://imgur.com/q4pNKUR)
 
 ####
 
