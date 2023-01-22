@@ -32,7 +32,7 @@
 
 ---
 
-#### Picture: ![Mango](https://imgur.com/q4pNKUR)
+#### Picture: ![Imgur](https://imgur.com/q4pNKUR)
 
 ####
 
