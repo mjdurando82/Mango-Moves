@@ -8,9 +8,20 @@ let gameOver = false
 let bottom = 0
 
 const jump = () => {
-  bottom += 40
-  mango.style.bottom = bottom + 'px'
-
+  let jumpUpTimer = setInterval(() => {
+    if (bottom > 125) {
+      clearInterval(jumpUpTimer)
+      let jumpDownTimer = setInterval(() => {
+        if (bottom <= 0) {
+          clearInterval(jumpDownTimer)
+        }
+        bottom -= 10
+        mango.style.bottom = bottom + 'px'
+      }, 40)
+    }
+    bottom += 30
+    mango.style.bottom = bottom + 'px'
+  }, 40)
   console.log('jump')
 }
 
