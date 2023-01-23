@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+img {
+  height: 100px;
+  width: 100px;
+  margin-top: 40%;
+}
+body {
+  background-color: aqua;
+  position: relative;
+}
+.mango{
+  height: 300px;
+  width: 250px;
+}
+.game-piece {
+  position: absolute;
+}
+.rock {
+  position: absolute;
+  padding-left: 80%;
+}
