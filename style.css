@@ -18,10 +18,15 @@ div {
 }
 .rock {
   position: absolute;
-  padding-left: 80%;
   height: 100px;
   width: 100px;
-  bottom: 0px;
+  bottom: -35px;
+  right: 0px;
+}
+.ball {
+  position: absolute;
+  height: 100px;
+  width: 100px;
 }
 
 .instructions {

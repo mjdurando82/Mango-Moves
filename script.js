@@ -2,12 +2,12 @@
 let score = document.querySelector('.score')
 const mango = document.querySelector('.game-piece')
 const rock = document.querySelector('.rock')
+const ball = document.querySelector('.ball')
 let gameOver = false
 ///GAME LOGIC & FUNCTIONS
 
-let bottom = 0
-
 const jump = () => {
+  let bottom = 0
   let jumpUpTimer = setInterval(() => {
     if (bottom > 125) {
       clearInterval(jumpUpTimer)
@@ -15,18 +15,19 @@ const jump = () => {
         if (bottom <= 0) {
           clearInterval(jumpDownTimer)
         }
-        bottom -= 10
+        bottom -= 15
         mango.style.bottom = bottom + 'px'
       }, 40)
     }
-    bottom += 30
+    bottom += 40
     mango.style.bottom = bottom + 'px'
   }, 40)
-  console.log('jump')
 }
-
-const motion = () => {}
-
+const rockMotion = () => {
+  let right = 0
+  right += 675
+  rock.style.right = right + 'px'
+}
 // const endGame = () => {
 //   if(rock pos === mango pos){
 //     gameOver = true
@@ -38,5 +39,6 @@ const motion = () => {}
 document.addEventListener('keydown', () => {
   if (event.code === 'Space') {
     jump()
+    rockMotion()
   }
 })
