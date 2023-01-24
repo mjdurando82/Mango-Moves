@@ -40,7 +40,7 @@ const rockMotion = () => {
     rock = document.querySelector('.rock')
     console.log(rock.style.right)
     console.log(mango.style.bottom)
-    if (rock.style.right >= '90vw' && mango.style.bottom <= '0vh') {
+    if (rock.style.right >= '86vw' && mango.style.bottom <= '0vh') {
       gameOver = true
       clearInterval(leftTimer)
       gameIsOver.style.opacity = 1
