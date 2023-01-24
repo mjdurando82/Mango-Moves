@@ -13,18 +13,18 @@ let score = 0
 const jump = () => {
   let bottom = 0
   let jumpUpTimer = setInterval(() => {
-    if (bottom > 115) {
+    if (bottom > 15) {
       clearInterval(jumpUpTimer)
       let jumpDownTimer = setInterval(() => {
         if (bottom <= 0) {
           clearInterval(jumpDownTimer)
         }
-        bottom -= 10
-        mango.style.bottom = bottom + 'px'
+        bottom -= 2
+        mango.style.bottom = bottom + 'vh'
       }, 40)
     }
-    bottom += 30
-    mango.style.bottom = bottom + 'px'
+    bottom += 3
+    mango.style.bottom = bottom + 'vh'
   }, 40)
   mango = document.querySelector('.game-piece')
 }
@@ -34,6 +34,7 @@ const rockMotion = () => {
   let leftTimer = setInterval(() => {
     if (right > 99) {
       right = 0
+      increaseScore()
     } else right += 5
     rock.style.right = right + 'vw'
     rock = document.querySelector('.rock')
@@ -77,6 +78,5 @@ const increaseScore = () => {
 document.addEventListener('keydown', () => {
   if (event.code === 'Space') {
     jump()
-    increaseScore()
   }
 })
