@@ -3,10 +3,13 @@ h1 {
 }
 body {
   background-color: aqua;
+  /* background-image: url('board.jpeg');
+  background-position: center;
+  width: 100% */
 }
 .game {
   position: relative;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 .game-piece {
   position: absolute;
@@ -20,6 +23,12 @@ body {
   width: 100px;
   bottom: -35px;
   right: 0px;
+}
+.ball{
+  position: absolute;
+  height: 50px;
+  right: -200px;
+  bottom: 150px;
 }
 .instructions {
   text-align: center;
