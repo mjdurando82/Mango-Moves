@@ -1,6 +1,6 @@
 ///GLOBAL VARIABLES
 
-let scoreDisplay = document.querySelector('.score')
+let scoreDisplay = document.querySelector('.score-int')
 let mango = document.querySelector('.game-piece')
 let rock = document.querySelector('.rock')
 const ball = document.querySelector('.ball')

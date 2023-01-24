@@ -21,12 +21,6 @@ body {
   bottom: -35px;
   right: 0px;
 }
-.ball {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-}
-
 .instructions {
   text-align: center;
 }
@@ -40,4 +34,26 @@ body {
 .game-over{
   color: red;
   opacity: 0;
+  text-align: center;
+}
+button{
+  background-color: goldenrod;
+}
+button:hover {
+  background-color: greenyellow;
+}
+h3 {
+  text-align: right;
+}
+.scoreboard {
+  display:flex;
+  justify-content: end;
+}
+.score-display {
+  text-align: center;
+}
+.score-int {
+  text-align: center;
+  align-self: baseline;
+  padding-left: 5px;
 }
