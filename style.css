@@ -37,3 +37,6 @@ body {
   height: 300px;
   width: 250px;
 }
+.game-over{
+ opacity: 0;
+}
