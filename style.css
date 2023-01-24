@@ -38,5 +38,6 @@ body {
   width: 250px;
 }
 .game-over{
+  color: red;
  opacity: 0;
 }

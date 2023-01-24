@@ -40,9 +40,11 @@
 
 ### **_Credits_**
 
-https://imgur.com/a/upCr3Fw
+- https://imgur.com/a/upCr3Fw
 
----
+- https://i.imgur.com/Ea9zjDx.png
+
+- https://www.pngegg.com/en/png-nujwu
 
 ```
 

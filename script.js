@@ -1,6 +1,6 @@
 ///GLOBAL VARIABLES
 
-let score = document.querySelector('.score')
+let scoreDisplay = document.querySelector('.score')
 let mango = document.querySelector('.game-piece')
 let rock = document.querySelector('.rock')
 const ball = document.querySelector('.ball')
@@ -8,7 +8,6 @@ let gameOver = false
 const gameIsOver = document.querySelector('.game-over')
 
 ///GAME LOGIC & FUNCTIONS
-
 const jump = () => {
   let bottom = 0
   let jumpUpTimer = setInterval(() => {
@@ -27,6 +26,7 @@ const jump = () => {
   }, 40)
   mango = document.querySelector('.game-piece')
 }
+
 const rockMotion = () => {
   let right = 0
   let leftTimer = setInterval(() => {
@@ -35,18 +35,25 @@ const rockMotion = () => {
     } else right += 50
     rock.style.right = right + 'px'
     rock = document.querySelector('.rock')
-    console.log(rock.style.right)
-    console.log(mango.style.bottom)
+    // console.log(rock.style.right)
+    // console.log(mango.style.bottom)
     if (rock.style.right >= '550px' && mango.style.bottom <= '0px') {
       gameOver = true
       clearInterval(leftTimer)
       gameIsOver.style.opacity = 1
-      console.log('game over')
     }
   }, 100)
 }
 if (gameOver === false) {
   rockMotion()
+}
+
+const increaseScore = () => {
+  if (gameOver === false) {
+    let score = 0
+    score += 10
+    scoreDisplay.innerText = score
+  }
 }
 
 ///EVENT LISTENERS
