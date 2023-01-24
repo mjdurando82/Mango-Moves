@@ -4,11 +4,9 @@ h1 {
 body {
   background-color: aqua;
 }
-div {
-  margin-top: 40%;
-}
 .game {
   position: relative;
+  margin-top: 40%;
 }
 .game-piece {
   position: absolute;
@@ -21,7 +19,7 @@ div {
   height: 100px;
   width: 100px;
   bottom: -35px;
-  right: 545px;
+  right: 0px;
 }
 .ball {
   position: absolute;
