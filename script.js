@@ -49,8 +49,10 @@ if (gameOver === false) {
 }
 
 const increaseScore = () => {
-  score += 10
-  scoreDisplay.innerText = score
+  if (gameOver === false) {
+    score += 10
+    scoreDisplay.innerText = score
+  }
 }
 
 ///EVENT LISTENERS
