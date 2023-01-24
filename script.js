@@ -6,7 +6,7 @@ let rock = document.querySelector('.rock')
 const ball = document.querySelector('.ball')
 let gameOver = false
 const gameIsOver = document.querySelector('.game-over')
-
+let score = 0
 ///GAME LOGIC & FUNCTIONS
 const jump = () => {
   let bottom = 0
@@ -49,11 +49,8 @@ if (gameOver === false) {
 }
 
 const increaseScore = () => {
-  if (gameOver === false) {
-    let score = 0
-    score += 10
-    scoreDisplay.innerText = score
-  }
+  score += 10
+  scoreDisplay.innerText = score
 }
 
 ///EVENT LISTENERS
@@ -61,5 +58,6 @@ const increaseScore = () => {
 document.addEventListener('keydown', () => {
   if (event.code === 'Space') {
     jump()
+    increaseScore()
   }
 })
