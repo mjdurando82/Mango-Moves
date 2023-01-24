@@ -15,7 +15,7 @@ const jump = () => {
         if (bottom <= 0) {
           clearInterval(jumpDownTimer)
         }
-        bottom -= 15
+        bottom -= 10
         mango.style.bottom = bottom + 'px'
       }, 40)
     }
@@ -25,8 +25,15 @@ const jump = () => {
 }
 const rockMotion = () => {
   let right = 0
-  right += 675
-  rock.style.right = right + 'px'
+  let leftTimer = setInterval(() => {
+    if (right > 675) {
+      clearInterval(leftTimer)
+    } else right += 60
+    rock.style.right = right + 'px'
+  }, 200)
+}
+if (gameOver === false) {
+  rockMotion()
 }
 // const endGame = () => {
 //   if(rock pos === mango pos){
@@ -39,6 +46,5 @@ const rockMotion = () => {
 document.addEventListener('keydown', () => {
   if (event.code === 'Space') {
     jump()
-    rockMotion()
   }
 })
