@@ -66,6 +66,9 @@ const ballOneMotion = () => {
       }, 1000)
       clearInterval(ballTimer)
       ball.style.opacity = 0
+    } else if (gameOver === true) {
+      clearInterval(ballTimer)
+      ball.style.opacity = 0
     }
   }, 80)
 }
@@ -86,8 +89,11 @@ const ballTwoMotion = () => {
       }, 1000)
       clearInterval(ballTwoTimer)
       ballTwo.style.opacity = 0
+    } else if (gameOver === true) {
+      clearInterval(ballTwoTimer)
+      ballTwo.style.opacity = 0
     }
-  }, 80)
+  }, 70)
 }
 const ballThreeMotion = () => {
   ballThree.style.opacity = 1
@@ -106,8 +112,11 @@ const ballThreeMotion = () => {
       }, 1000)
       clearInterval(ballThreeTimer)
       ballThree.style.opacity = 0
+    } else if (gameOver === true) {
+      clearInterval(ballThreeTimer)
+      ballThree.style.opacity = 0
     }
-  }, 80)
+  }, 60)
 }
 
 if (gameOver === false) {
