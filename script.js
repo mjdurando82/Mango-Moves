@@ -17,7 +17,7 @@ const reset = document.querySelector('.reset')
 const jump = () => {
   let bottom = 0
   let jumpUpTimer = setInterval(() => {
-    if (bottom > 15) {
+    if (bottom > 16) {
       clearInterval(jumpUpTimer)
       let jumpDownTimer = setInterval(() => {
         if (bottom <= 0) {
@@ -42,7 +42,8 @@ const rockMotion = () => {
     } else right += 6
     rock.style.right = right + 'vw'
     rock = document.querySelector('.rock')
-    if (rock.style.right >= '76vw' && mango.style.bottom <= '0vh') {
+    if (rock.style.right >= '75vw' && mango.style.bottom <= '0vh') {
+      console.log(mango.style.bottom)
       gameOver = true
       clearInterval(leftTimer)
       gameIsOver.style.opacity = 1
