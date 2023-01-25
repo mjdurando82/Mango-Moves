@@ -3,8 +3,7 @@ h1 {
 }
 body {
   background-image: url('background.jpeg');
-  background-repeat: repeat-x;
-  justify-content: center;
+  background-position: bottom;
 }
   h3 {
     text-align: right;
