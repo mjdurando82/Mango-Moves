@@ -9,7 +9,7 @@ body {
 }
 .game {
   position: relative;
-  margin-top: 30%;
+  margin-top: 40%;
 }
 .game-piece {
   position: absolute;
@@ -29,6 +29,7 @@ body {
   height: 50px;
   right: 0vw;
   bottom: 20vh;
+  opacity: 0;
 }
 .instructions {
   text-align: center;
