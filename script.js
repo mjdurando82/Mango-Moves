@@ -64,7 +64,7 @@ const ballOneMotion = () => {
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
         bonus.innerText = ' '
-      }, 1000)
+      }, 1500)
       clearInterval(ballTimer)
       ball.style.opacity = 0
     } else if (gameOver === true) {
@@ -82,7 +82,7 @@ const ballTwoMotion = () => {
     } else right += 7
     ballTwo.style.right = right + 'vw'
     ballTwo = document.querySelector('.ball2')
-    if (ballTwo.style.right >= '78vw' && mango.style.bottom >= '15vw') {
+    if (ballTwo.style.right >= '80vw' && mango.style.bottom >= '15vw') {
       score += 20
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
@@ -94,7 +94,7 @@ const ballTwoMotion = () => {
       clearInterval(ballTwoTimer)
       ballTwo.style.opacity = 0
     }
-  }, 80)
+  }, 85)
 }
 const ballThreeMotion = () => {
   ballThree.style.opacity = 1
@@ -105,7 +105,7 @@ const ballThreeMotion = () => {
     } else right += 7
     ballThree.style.right = right + 'vw'
     ballThree = document.querySelector('.ball3')
-    if (ballThree.style.right >= '78vw' && mango.style.bottom >= '15vw') {
+    if (ballThree.style.right >= '80vw' && mango.style.bottom >= '15vw') {
       score += 20
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
@@ -117,7 +117,7 @@ const ballThreeMotion = () => {
       clearInterval(ballThreeTimer)
       ballThree.style.opacity = 0
     }
-  }, 80)
+  }, 85)
 }
 
 if (gameOver === false) {
@@ -127,7 +127,7 @@ if (gameOver === false) {
   }, 7500)
   setTimeout(() => {
     ballTwoMotion()
-  }, 15000)
+  }, 16000)
   setTimeout(() => {
     ballThreeMotion()
   }, 22500)
@@ -148,4 +148,7 @@ document.addEventListener('keydown', () => {
 
 reset.addEventListener('click', () => {
   window.location.reload()
+})
+document.addEventListener('touch', () => {
+  jump()
 })

@@ -17,3 +17,6 @@ body {
 .instructions {
   text-align: center;
 }
+button {
+  padding: 1vh;
+}

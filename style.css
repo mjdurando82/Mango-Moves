@@ -7,9 +7,7 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(86, 118, 22);
 }
-h3 {
-  text-align: right;
-}
+
 .game {
   position: relative;
   margin-top: 40%;
@@ -61,8 +59,8 @@ h3 {
   text-align: center;
 }
 .scoreboard {
-  display:flex;
-  justify-content: end;
+  display:grid;
+  grid-template-columns: 20fr .2fr 1fr;
 }
 .score-display {
   text-align: center;
@@ -75,8 +73,8 @@ h3 {
   justify-content: end;
 }
 .bonus{
-  align-self: center;
-  padding-right: 39vw
+  justify-content: center;
+  padding-right: 50%;
 }
 .reset{
   margin-left: 90%;
