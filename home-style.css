@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+body {
+  background-color: aqua;
+}
+.mango{
+  height: 60vh;
+  width: 45vw;
+}
+.start-button{
+  background-color: goldenrod;
+}
+.start-button:hover {
+  background-color: greenyellow;
+}
+.instructions {
+  text-align: center;
+}

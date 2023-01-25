@@ -7,9 +7,9 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(86, 118, 22);
 }
-  h3 {
-    text-align: right;
-  }
+h3 {
+  text-align: right;
+}
 .game {
   position: relative;
   margin-top: 40%;
@@ -54,20 +54,11 @@ body {
 .score {
   text-align: right;
 }
-.mango{
-  height: 300px;
-  width: 250px;
-}
+
 .game-over{
   color: red;
   opacity: 0;
   text-align: center;
-}
-.start-button{
-  background-color: goldenrod;
-}
-.start-button:hover {
-  background-color: greenyellow;
 }
 .scoreboard {
   display:flex;
