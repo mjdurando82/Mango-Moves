@@ -135,8 +135,15 @@ if (gameOver === false) {
 }
 
 const increaseScore = () => {
+  checkWinner()
   score += 10
   scoreDisplay.innerText = score
+}
+
+const checkWinner = () => {
+  if (score === 240) {
+    window.location.href = 'win-screen.html'
+  }
 }
 
 ///EVENT LISTENERS
@@ -150,6 +157,7 @@ document.addEventListener('keydown', () => {
 reset.addEventListener('click', () => {
   window.location.reload()
 })
+
 document.addEventListener('touchstart', () => {
   jump()
 })
