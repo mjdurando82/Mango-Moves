@@ -3,9 +3,8 @@ h1 {
 }
 body {
   background-color: aqua;
-  /* background-image: url('board.jpeg');
-  background-position: center;
-  width: 100% */
+  background-image: url('ground.png');
+  width: 100%
 }
   h3 {
     text-align: right;
@@ -16,34 +15,34 @@ body {
 }
 .game-piece {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 15vh;
+  width: 14vw;
   bottom: 0px;
 }
 .rock {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 15vh;
+  width: 14vw;
   bottom: -35px;
   right: 0vw;
 }
 .ball{
   position: absolute;
-  height: 50px;
+  height: 6vh;
   right: 0vw;
   bottom: 20vh;
   opacity: 0;
 }
 .ball2 {
   position: absolute;
-  height: 50px;
+  height: 6vh;
   right: 0vw;
   bottom: 20vh;
   opacity: 0;
 }
 .ball3{
   position: absolute;
-  height: 50px;
+  height: 6vh;
   right: 0vw;
   bottom: 20vh;
   opacity: 0;
@@ -88,5 +87,5 @@ body {
   padding-right: 39vw
 }
 .reset{
-  margin-left: 88%;
+  margin-left: 90%;
 }
