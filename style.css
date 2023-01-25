@@ -2,9 +2,9 @@ h1 {
   text-align: center;
 }
 body {
-  background-color: aqua;
-  background-image: url('ground.png');
-  width: 100%
+  background-image: url('background.jpeg');
+  background-repeat: repeat-x;
+  justify-content: center;
 }
   h3 {
     text-align: right;
