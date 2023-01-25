@@ -4,6 +4,8 @@ h1 {
 body {
   background-image: url('background.jpeg');
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgb(86, 118, 24);
 }
   h3 {
     text-align: right;
