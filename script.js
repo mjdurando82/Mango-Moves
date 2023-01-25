@@ -10,6 +10,7 @@ let gameOver = false
 const gameIsOver = document.querySelector('.game-over')
 let score = 0
 let bonus = document.querySelector('.bonus')
+const reset = document.querySelector('.reset')
 
 ///GAME LOGIC & FUNCTIONS
 
@@ -123,19 +124,18 @@ if (gameOver === false) {
   rockMotion()
   setTimeout(() => {
     ballOneMotion()
-  }, 8000)
+  }, 7000)
   setTimeout(() => {
     ballTwoMotion()
-  }, 16000)
+  }, 14000)
   setTimeout(() => {
     ballThreeMotion()
-  }, 24000)
+  }, 21000)
 }
 
 const increaseScore = () => {
   score += 10
   scoreDisplay.innerText = score
-  console.log(score)
 }
 
 ///EVENT LISTENERS
@@ -144,4 +144,8 @@ document.addEventListener('keydown', () => {
   if (event.code === 'Space') {
     jump()
   }
+})
+
+reset.addEventListener('click', () => {
+  window.location.reload()
 })

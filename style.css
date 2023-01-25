@@ -7,6 +7,9 @@ body {
   background-position: center;
   width: 100% */
 }
+  h3 {
+    text-align: right;
+  }
 .game {
   position: relative;
   margin-top: 40%;
@@ -60,14 +63,11 @@ body {
   opacity: 0;
   text-align: center;
 }
-button{
+.start-button{
   background-color: goldenrod;
 }
-button:hover {
+.start-button:hover {
   background-color: greenyellow;
-}
-h3 {
-  text-align: right;
 }
 .scoreboard {
   display:flex;
@@ -84,6 +84,9 @@ h3 {
   justify-content: end;
 }
 .bonus{
- align-self: center;
+  align-self: center;
   padding-right: 39vw
+}
+.reset{
+  margin-left: 88%;
 }
