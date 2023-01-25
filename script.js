@@ -4,6 +4,8 @@ let scoreDisplay = document.querySelector('.score-int')
 let mango = document.querySelector('.game-piece')
 let rock = document.querySelector('.rock')
 let ball = document.querySelector('.ball')
+let ballTwo = document.querySelector('.ball2')
+let ballThree = document.querySelector('.ball3')
 let gameOver = false
 const gameIsOver = document.querySelector('.game-over')
 let score = 0
@@ -47,7 +49,7 @@ const rockMotion = () => {
   }, 100)
 }
 
-const ballMotion = () => {
+const ballOneMotion = () => {
   ball.style.opacity = 1
   let right = 0
   let ballTimer = setInterval(() => {
@@ -64,7 +66,46 @@ const ballMotion = () => {
       }, 1000)
       clearInterval(ballTimer)
       ball.style.opacity = 0
-      console.log('ball')
+    }
+  }, 80)
+}
+const ballTwoMotion = () => {
+  ballTwo.style.opacity = 1
+  let right = 0
+  let ballTwoTimer = setInterval(() => {
+    if (right > 99) {
+      right = 0
+    } else right += 7
+    ballTwo.style.right = right + 'vw'
+    ballTwo = document.querySelector('.ball2')
+    if (ballTwo.style.right >= '86vw' && mango.style.bottom >= '15vw') {
+      score += 20
+      bonus.innerText = 'Ball Bonus + 20!'
+      setTimeout(() => {
+        bonus.innerText = ' '
+      }, 1000)
+      clearInterval(ballTwoTimer)
+      ballTwo.style.opacity = 0
+    }
+  }, 80)
+}
+const ballThreeMotion = () => {
+  ballThree.style.opacity = 1
+  let right = 0
+  let ballThreeTimer = setInterval(() => {
+    if (right > 99) {
+      right = 0
+    } else right += 7
+    ballThree.style.right = right + 'vw'
+    ballThree = document.querySelector('.ball3')
+    if (ballThree.style.right >= '86vw' && mango.style.bottom >= '15vw') {
+      score += 20
+      bonus.innerText = 'Ball Bonus + 20!'
+      setTimeout(() => {
+        bonus.innerText = ' '
+      }, 1000)
+      clearInterval(ballThreeTimer)
+      ballThree.style.opacity = 0
     }
   }, 80)
 }
@@ -72,8 +113,14 @@ const ballMotion = () => {
 if (gameOver === false) {
   rockMotion()
   setTimeout(() => {
-    ballMotion()
-  }, 10000)
+    ballOneMotion()
+  }, 8000)
+  setTimeout(() => {
+    ballTwoMotion()
+  }, 16000)
+  setTimeout(() => {
+    ballThreeMotion()
+  }, 24000)
 }
 
 const increaseScore = () => {
