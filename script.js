@@ -150,6 +150,6 @@ document.addEventListener('keydown', () => {
 reset.addEventListener('click', () => {
   window.location.reload()
 })
-document.addEventListener('touch', () => {
+document.addEventListener('touchstart', () => {
   jump()
 })
