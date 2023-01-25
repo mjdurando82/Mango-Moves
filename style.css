@@ -7,7 +7,12 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(86, 118, 22);
 }
-
+button {
+  background-color: skyblue;
+}
+button:hover {
+  background-color: aquamarine;
+}
 .game {
   position: relative;
   margin-top: 40%;

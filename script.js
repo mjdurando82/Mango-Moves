@@ -39,10 +39,10 @@ const rockMotion = () => {
     if (right > 99) {
       right = 0
       increaseScore()
-    } else right += 5
+    } else right += 6
     rock.style.right = right + 'vw'
     rock = document.querySelector('.rock')
-    if (rock.style.right >= '77vw' && mango.style.bottom <= '0vh') {
+    if (rock.style.right >= '76vw' && mango.style.bottom <= '0vh') {
       gameOver = true
       clearInterval(leftTimer)
       gameIsOver.style.opacity = 1
@@ -59,7 +59,7 @@ const ballOneMotion = () => {
     } else right += 7
     ball.style.right = right + 'vw'
     ball = document.querySelector('.ball')
-    if (ball.style.right >= '78vw' && mango.style.bottom >= '15vw') {
+    if (ball.style.right >= '80vw' && mango.style.bottom >= '15vw') {
       score += 20
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
@@ -124,7 +124,7 @@ if (gameOver === false) {
   rockMotion()
   setTimeout(() => {
     ballOneMotion()
-  }, 7500)
+  }, 6500)
   setTimeout(() => {
     ballTwoMotion()
   }, 16000)
