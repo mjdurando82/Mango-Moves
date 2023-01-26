@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: orange;
 }
 h2 {
   text-align: center;
@@ -40,5 +41,7 @@ section {
   display: flex;
   justify-content: space-around;
   padding: 4vw;
-
+}
+.hints {
+  margin-top: 2vh;
 }

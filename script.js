@@ -1,6 +1,6 @@
 ///GLOBAL VARIABLES
 
-let scoreDisplay = document.querySelector('.score-int')
+const scoreDisplay = document.querySelector('.score-int')
 let mango = document.querySelector('.game-piece')
 let rock = document.querySelector('.rock')
 let ball = document.querySelector('.ball')
@@ -10,7 +10,7 @@ let candy = document.querySelector('.chocolate')
 let gameOver = false
 const gameIsOver = document.querySelector('.game-over')
 let score = 0
-let bonus = document.querySelector('.bonus')
+const bonus = document.querySelector('.bonus')
 const reset = document.querySelector('.reset')
 
 ///GAME LOGIC & FUNCTIONS
@@ -53,6 +53,7 @@ const rockMotion = () => {
     }
   }, 100)
 }
+
 const candyMotion = () => {
   candy.style.opacity = 1
   let right = 0
@@ -79,7 +80,7 @@ const ballOneMotion = () => {
   let right = 0
   let ballTimer = setInterval(() => {
     if (right > 99) {
-      right = 0
+      clearInterval(ballTimer)
     } else right += 7
     ball.style.right = right + 'vw'
     ball = document.querySelector('.ball')
@@ -97,12 +98,13 @@ const ballOneMotion = () => {
     }
   }, 85)
 }
+
 const ballTwoMotion = () => {
   ballTwo.style.opacity = 1
   let right = 0
   let ballTwoTimer = setInterval(() => {
     if (right > 99) {
-      right = 0
+      clearInterval(ballTwoTimer)
     } else right += 7
     ballTwo.style.right = right + 'vw'
     ballTwo = document.querySelector('.ball2')
@@ -120,12 +122,13 @@ const ballTwoMotion = () => {
     }
   }, 85)
 }
+
 const ballThreeMotion = () => {
   ballThree.style.opacity = 1
   let right = 0
   let ballThreeTimer = setInterval(() => {
     if (right > 99) {
-      right = 0
+      clearInterval(ballThreeTimer)
     } else right += 7
     ballThree.style.right = right + 'vw'
     ballThree = document.querySelector('.ball3')
@@ -157,7 +160,7 @@ if (gameOver === false) {
   }, 21000)
   setTimeout(() => {
     ballThreeMotion()
-  }, 25000)
+  }, 24500)
 }
 
 const increaseScore = () => {
