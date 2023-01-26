@@ -6,6 +6,7 @@ let rock = document.querySelector('.rock')
 let ball = document.querySelector('.ball')
 let ballTwo = document.querySelector('.ball2')
 let ballThree = document.querySelector('.ball3')
+let candy = document.querySelector('.chocolate')
 let gameOver = false
 const gameIsOver = document.querySelector('.game-over')
 let score = 0
@@ -36,17 +37,39 @@ const jump = () => {
 const rockMotion = () => {
   let right = 0
   let leftTimer = setInterval(() => {
-    if (right > 99) {
+    if (right > 99 && gameOver === false) {
       right = 0
       increaseScore()
     } else right += 6
     rock.style.right = right + 'vw'
     rock = document.querySelector('.rock')
-    if (rock.style.right >= '75vw' && mango.style.bottom <= '0vh') {
-      console.log(mango.style.bottom)
+    if (
+      (rock.style.right >= '75vw' && mango.style.bottom <= '0vh') ||
+      gameOver === true
+    ) {
       gameOver = true
       clearInterval(leftTimer)
       gameIsOver.style.opacity = 1
+    }
+  }, 100)
+}
+const candyMotion = () => {
+  candy.style.opacity = 1
+  let right = 0
+  let candyTimer = setInterval(() => {
+    if (right > 99) {
+      clearInterval(candyTimer)
+    } else right += 7
+    candy.style.right = right + 'vw'
+    candy = document.querySelector('.chocolate')
+    if (candy.style.right >= '80vw' && mango.style.bottom >= '15vh') {
+      gameOver = true
+      candy.style.opacity = 0
+      clearInterval(candyTimer)
+      gameIsOver.style.opacity = 1
+    } else if (gameOver == true) {
+      clearInterval(candyTimer)
+      candy.style.opacity = 0
     }
   }, 100)
 }
@@ -60,7 +83,7 @@ const ballOneMotion = () => {
     } else right += 7
     ball.style.right = right + 'vw'
     ball = document.querySelector('.ball')
-    if (ball.style.right >= '80vw' && mango.style.bottom >= '15vw') {
+    if (ball.style.right >= '80vw' && mango.style.bottom >= '15vh') {
       score += 20
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
@@ -83,7 +106,7 @@ const ballTwoMotion = () => {
     } else right += 7
     ballTwo.style.right = right + 'vw'
     ballTwo = document.querySelector('.ball2')
-    if (ballTwo.style.right >= '80vw' && mango.style.bottom >= '15vw') {
+    if (ballTwo.style.right >= '80vw' && mango.style.bottom >= '15vh') {
       score += 20
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
@@ -106,7 +129,7 @@ const ballThreeMotion = () => {
     } else right += 7
     ballThree.style.right = right + 'vw'
     ballThree = document.querySelector('.ball3')
-    if (ballThree.style.right >= '80vw' && mango.style.bottom >= '15vw') {
+    if (ballThree.style.right >= '80vw' && mango.style.bottom >= '15vh') {
       score += 20
       bonus.innerText = 'Ball Bonus + 20!'
       setTimeout(() => {
@@ -130,8 +153,11 @@ if (gameOver === false) {
     ballTwoMotion()
   }, 16000)
   setTimeout(() => {
+    candyMotion()
+  }, 21000)
+  setTimeout(() => {
     ballThreeMotion()
-  }, 22500)
+  }, 25000)
 }
 
 const increaseScore = () => {

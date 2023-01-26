@@ -6,6 +6,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: rgb(86, 118, 22);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
   background-color: skyblue;
@@ -51,6 +52,13 @@ button:hover {
   bottom: 20vh;
   opacity: 0;
 }
+.chocolate {
+  position: absolute;
+  height: 6vh;
+  right: 0vw;
+  bottom: 20vh;
+  opacity: 0;
+}
 .instructions {
   text-align: center;
 }
@@ -83,4 +91,5 @@ button:hover {
 }
 .reset{
   margin-left: 90%;
+  padding: 1vw
 }
