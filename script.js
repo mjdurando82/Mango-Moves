@@ -189,5 +189,7 @@ reset.addEventListener('click', () => {
 })
 
 document.addEventListener('touchstart', () => {
-  jump()
+  if (mango.style.bottom <= '0vh') {
+    jump()
+  }
 })
