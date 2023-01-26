@@ -1,11 +1,13 @@
 h1 {
   text-align: center;
+  color: orange;
 }
 body {
   background-image: url('background.jpeg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: rgb(86, 118, 22);
+  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
