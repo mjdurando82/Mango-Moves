@@ -65,7 +65,6 @@ const candyMotion = () => {
     candy = document.querySelector('.chocolate')
     if (candy.style.right >= '80vw' && mango.style.bottom >= '15vh') {
       gameOver = true
-      candy.style.opacity = 0
       clearInterval(candyTimer)
       gameIsOver.style.opacity = 1
     } else if (gameOver == true) {
@@ -147,15 +146,15 @@ const ballThreeMotion = () => {
   }, 85)
 }
 
-const increaseScore = () => {
-  checkWinner()
-  score += 10
-  scoreDisplay.innerText = score
-}
 const checkWinner = () => {
   if (score >= 240) {
     window.location.href = 'win-screen.html'
   }
+}
+const increaseScore = () => {
+  checkWinner()
+  score += 10
+  scoreDisplay.innerText = score
 }
 
 if (gameOver === false) {
