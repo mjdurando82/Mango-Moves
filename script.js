@@ -147,6 +147,17 @@ const ballThreeMotion = () => {
   }, 85)
 }
 
+const increaseScore = () => {
+  checkWinner()
+  score += 10
+  scoreDisplay.innerText = score
+}
+const checkWinner = () => {
+  if (score >= 240) {
+    window.location.href = 'win-screen.html'
+  }
+}
+
 if (gameOver === false) {
   rockMotion()
   setTimeout(() => {
@@ -163,22 +174,13 @@ if (gameOver === false) {
   }, 24500)
 }
 
-const increaseScore = () => {
-  checkWinner()
-  score += 10
-  scoreDisplay.innerText = score
-}
-const checkWinner = () => {
-  if (score >= 240) {
-    window.location.href = 'win-screen.html'
-  }
-}
-
 ///EVENT LISTENERS
 
 document.addEventListener('keydown', () => {
   if (event.code === 'Space') {
-    jump()
+    if (mango.style.bottom <= '0vh') {
+      jump()
+    }
   }
 })
 
