@@ -141,7 +141,7 @@ const increaseScore = () => {
 }
 
 const checkWinner = () => {
-  if (score === 240) {
+  if (score >= 240) {
     window.location.href = 'win-screen.html'
   }
 }
