@@ -13,7 +13,7 @@ button {
   background-color: skyblue;
 }
 button:hover {
-  background-color: aquamarine;
+  background-color: aqua;
 }
 .game {
   position: relative;

@@ -158,19 +158,21 @@ const increaseScore = () => {
 }
 
 if (gameOver === false) {
-  rockMotion()
+  setTimeout(() => {
+    rockMotion()
+  }, 1000)
   setTimeout(() => {
     ballOneMotion()
-  }, 6500)
+  }, 7500)
   setTimeout(() => {
     ballTwoMotion()
-  }, 16000)
+  }, 17000)
   setTimeout(() => {
     candyMotion()
-  }, 21000)
+  }, 22000)
   setTimeout(() => {
     ballThreeMotion()
-  }, 24500)
+  }, 25500)
 }
 
 ///EVENT LISTENERS
