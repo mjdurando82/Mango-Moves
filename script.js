@@ -34,6 +34,26 @@ const jump = () => {
   mango = document.querySelector('.game-piece')
 }
 
+const ballCaught = () => {
+  score += 20
+  bonus.innerText = 'Ball Bonus + 20!'
+  setTimeout(() => {
+    bonus.innerText = ' '
+  }, 1500)
+}
+
+const checkWinner = () => {
+  if (score >= 240) {
+    window.location.href = 'win-screen.html'
+  }
+}
+
+const increaseScore = () => {
+  checkWinner()
+  score += 10
+  scoreDisplay.innerText = score
+}
+
 const rockMotion = () => {
   let right = 0
   let leftTimer = setInterval(() => {
@@ -84,11 +104,7 @@ const ballOneMotion = () => {
     ball.style.right = right + 'vw'
     ball = document.querySelector('.ball')
     if (ball.style.right >= '80vw' && mango.style.bottom >= '15vh') {
-      score += 20
-      bonus.innerText = 'Ball Bonus + 20!'
-      setTimeout(() => {
-        bonus.innerText = ' '
-      }, 1500)
+      ballCaught()
       clearInterval(ballTimer)
       ball.style.opacity = 0
     } else if (gameOver === true) {
@@ -108,11 +124,7 @@ const ballTwoMotion = () => {
     ballTwo.style.right = right + 'vw'
     ballTwo = document.querySelector('.ball2')
     if (ballTwo.style.right >= '80vw' && mango.style.bottom >= '15vh') {
-      score += 20
-      bonus.innerText = 'Ball Bonus + 20!'
-      setTimeout(() => {
-        bonus.innerText = ' '
-      }, 1000)
+      ballCaught()
       clearInterval(ballTwoTimer)
       ballTwo.style.opacity = 0
     } else if (gameOver === true) {
@@ -132,11 +144,7 @@ const ballThreeMotion = () => {
     ballThree.style.right = right + 'vw'
     ballThree = document.querySelector('.ball3')
     if (ballThree.style.right >= '80vw' && mango.style.bottom >= '15vh') {
-      score += 20
-      bonus.innerText = 'Ball Bonus + 20!'
-      setTimeout(() => {
-        bonus.innerText = ' '
-      }, 1000)
+      ballCaught()
       clearInterval(ballThreeTimer)
       ballThree.style.opacity = 0
     } else if (gameOver === true) {
@@ -144,18 +152,6 @@ const ballThreeMotion = () => {
       ballThree.style.opacity = 0
     }
   }, 85)
-}
-
-const checkWinner = () => {
-  if (score >= 240) {
-    window.location.href = 'win-screen.html'
-  }
-}
-
-const increaseScore = () => {
-  checkWinner()
-  score += 10
-  scoreDisplay.innerText = score
 }
 
 if (gameOver === false) {
