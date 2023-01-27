@@ -68,8 +68,8 @@ const candyMotion = () => {
       clearInterval(candyTimer)
       gameIsOver.style.opacity = 1
     } else if (gameOver == true) {
-      clearInterval(candyTimer)
       candy.style.opacity = 0
+      clearInterval(candyTimer)
     }
   }, 100)
 }
@@ -92,8 +92,8 @@ const ballOneMotion = () => {
       clearInterval(ballTimer)
       ball.style.opacity = 0
     } else if (gameOver === true) {
-      clearInterval(ballTimer)
       ball.style.opacity = 0
+      clearInterval(ballTimer)
     }
   }, 85)
 }
