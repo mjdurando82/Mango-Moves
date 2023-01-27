@@ -12,7 +12,7 @@
 
 ### **_Description_**
 
-#### My dog, Mango, loves to go to the beach. The user must take her there. As the user hit the space bar or touch the screen to make her jump over obstacles. The game ends if Mango fails to jump the obstacle. To win and reach the beach the user must reach 250 points. This game was developed to showcase the cutest english bulldog.
+#### My dog, Mango, loves to go to the beach. The user must take her there. As the user hit the space bar or touch the screen to make her jump over obstacles. The game ends if Mango fails to jump the obstacle. To win and reach the beach the user must get 250 points. This game was developed to showcase the cutest english bulldog.
 
 ---
 
