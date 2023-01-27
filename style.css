@@ -2,6 +2,7 @@ h1 {
   text-align: center;
   color: orange;
 }
+
 body {
   background-image: url('background.jpeg');
   background-repeat: no-repeat;
@@ -9,22 +10,27 @@ body {
   background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 button {
-  background-color: skyblue;
+  background-color: orange;
 }
+
 button:hover {
-  background-color: aqua;
+  background-color: yellow;
 }
+
 .game {
   position: relative;
   margin-top: 35%;
 }
+
 .game-piece {
   position: absolute;
   height: 15vh;
   width: 14vw;
   bottom: 0px;
 }
+
 .rock {
   position: absolute;
   height: 15vh;
@@ -32,6 +38,7 @@ button:hover {
   bottom: -35px;
   right: 0vw;
 }
+
 .ball{
   position: absolute;
   height: 6vh;
@@ -39,6 +46,7 @@ button:hover {
   bottom: 20vh;
   opacity: 0;
 }
+
 .ball2 {
   position: absolute;
   height: 6vh;
@@ -46,6 +54,7 @@ button:hover {
   bottom: 20vh;
   opacity: 0;
 }
+
 .ball3{
   position: absolute;
   height: 6vh;
@@ -53,6 +62,7 @@ button:hover {
   bottom: 20vh;
   opacity: 0;
 }
+
 .chocolate {
   position: absolute;
   height: 6vh;
@@ -60,37 +70,45 @@ button:hover {
   bottom: 20vh;
   opacity: 0;
 }
+
 .instructions {
   text-align: center;
 }
+
 .score {
   text-align: right;
 }
+
 
 .game-over{
   color: red;
   opacity: 0;
   text-align: center;
 }
+
 .scoreboard {
   display:grid;
   grid-template-columns: 20fr .2fr 1fr;
 }
+
 .score-display {
   text-align: center;
   justify-content: end;
 }
+
 .score-int {
   text-align: center;
   align-self: baseline;
   padding-left: 5px;
   justify-content: end;
 }
+
 .bonus{
   justify-content: center;
   padding-right: 50%;
 }
+
 .reset{
   margin-left: 90%;
-  padding: 1vw;
+  padding: 1vh;
 }

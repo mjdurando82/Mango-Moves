@@ -151,6 +151,7 @@ const checkWinner = () => {
     window.location.href = 'win-screen.html'
   }
 }
+
 const increaseScore = () => {
   checkWinner()
   score += 10
@@ -160,19 +161,19 @@ const increaseScore = () => {
 if (gameOver === false) {
   setTimeout(() => {
     rockMotion()
-  }, 1000)
+  }, 1500)
   setTimeout(() => {
     ballOneMotion()
-  }, 7500)
+  }, 8000)
   setTimeout(() => {
     ballTwoMotion()
-  }, 17000)
+  }, 17500)
   setTimeout(() => {
     candyMotion()
-  }, 22000)
+  }, 22500)
   setTimeout(() => {
     ballThreeMotion()
-  }, 25500)
+  }, 26000)
 }
 
 ///EVENT LISTENERS

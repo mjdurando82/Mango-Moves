@@ -3,29 +3,35 @@ h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: orange;
 }
+
 h2 {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
   background-color: rgb(55, 146, 225);
   text-align: center;
   margin-top: 5vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 button{
-  background-color: goldenrod;
+  background-color: orange;
   padding: 1vh;
   margin-top: 5vh;
 }
+
 button:hover {
-  background-color: greenyellow;
+  background-color: yellow;
 }
+
 section {
   display: flex;
   justify-content: space-around;
   padding: 4vw;
 }
+
 .mango{
   height: 25%;
   width: 25%;
@@ -33,6 +39,7 @@ section {
   margin: auto;
   border-radius: 50%;
 }
+
 .mangoOne {
   height: 25%;
   width: 25%;
@@ -40,9 +47,11 @@ section {
   margin: auto;
   border-radius: 50%;
 }
+
 .instructions {
   text-align: center;
 }
+
 .hints {
   margin-top: 2vh;
 }
