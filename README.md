@@ -26,9 +26,9 @@
 
 ### **_How to Get Started_**
 
-#### Press the start button to begin your journey as Mango. Control Mango by hitting the space bar or touching the screen to jump over obstacles.
+#### Click the game link down below. From there you can begin your journey as Mango! Control Mango by hitting the space bar or touching the screen to jump over obstacles and help her reach the beach. ![Game Link](https://mango-moves.surge.sh)
 
-#### A Trello board was used to track and organize the development progress and can be viewed here. (https://trello.com/b/nIZ8x3Xp/unit-1-project)
+#### A Trello board was used to track and organize the development progress and can be viewed here. ![Trello](https://trello.com/b/nIZ8x3Xp/unit-1-project)
 
 ---
 
