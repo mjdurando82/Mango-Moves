@@ -1,6 +1,6 @@
 # Mango-Moves
 
-### A Dog inspired browser game
+### A Dog Inspired Browser Game
 
 ## Date 1/22/23
 
